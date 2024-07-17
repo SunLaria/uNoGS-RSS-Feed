@@ -1,0 +1,26 @@
+version: '4'
+
+services:
+  unogs-rss-feed:
+    container_name: uNoGS-RSS-Feed
+    image: docker.io/randomg1/unogs-rss-feed:latest
+    environment:
+      BASE_URL: "https://unogs.com/search/"
+      MAX_RESULTS: 50
+      START_YEAR: 1900
+      END_YEAR: 2024
+      # START_RATING: 2
+      END_RATING: 10
+      # GENRELIST: 43048
+      TYPE: "Movie"
+      AUDIO: "English"
+      SUBTITLE: "English"
+      AUDIOSUBTITLE_ANDOR: "and"
+      # PERSON: "Morgan Freeman"
+      # FILTERBY: "New last 24 hours"
+      # ORDERBY: "Date"
+      COUNTRY_ANDORUNIQUE: "and"
+      COUNTRYLIST: 78
+    ports:
+      - "8030:8000"
+    restart: unless-stopped

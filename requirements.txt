@@ -1,0 +1,7 @@
+fastapi
+uvicorn[standard]
+gunicorn
+selenium
+bs4
+rfeed
+loguru

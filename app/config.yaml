@@ -1,0 +1,18 @@
+app:
+  base_url: "https://unogs.com/search/"
+  params:
+    start_year: 2000
+    end_year: 2024
+    start_rating: # 2
+    end_rating: 10
+    genrelist: # 43048
+    type: # "Movie"
+    audio: # "English"
+    subtitle: # "English"
+    audiosubtitle_andor: # "and"
+    person: # "Morgan Freeman"
+    filterby: # "New last 24 hours"
+    orderby: # "Date"
+    countrylist: # 78
+    country_andorunique: # "and"
+  max_results: 50
